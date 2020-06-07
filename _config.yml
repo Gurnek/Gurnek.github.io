@@ -27,7 +27,6 @@ markdown: kramdown
 # theme: phantom # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate
-  - jekyll-include-cache
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
@@ -87,6 +86,8 @@ pagination:
   # Without file extension
   indexpage: 'index'
 
+paginate: 5
+paginate_path: '/post/page:num/'
 ############################################################
 
 ### Phantom settings
