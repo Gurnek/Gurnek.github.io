@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Gurnek.github.io/static/css/main.e65ba2f4.css",
-    "main.js": "/Gurnek.github.io/static/js/main.b97971ee.js",
-    "index.html": "/Gurnek.github.io/index.html",
-    "main.e65ba2f4.css.map": "/Gurnek.github.io/static/css/main.e65ba2f4.css.map",
-    "main.b97971ee.js.map": "/Gurnek.github.io/static/js/main.b97971ee.js.map"
+    "main.css": "/static/css/main.e65ba2f4.css",
+    "main.js": "/static/js/main.b97971ee.js",
+    "index.html": "/index.html",
+    "main.e65ba2f4.css.map": "/static/css/main.e65ba2f4.css.map",
+    "main.b97971ee.js.map": "/static/js/main.b97971ee.js.map"
   },
   "entrypoints": [
     "static/css/main.e65ba2f4.css",
