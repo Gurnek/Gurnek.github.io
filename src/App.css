@@ -28,11 +28,100 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.container {
+  background-color: #282c34;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.question button {
+  color: white;
+  margin: 5px;
+  padding: 1.5rem;
+  background-color: #1b023b;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 2em;
+}
+
+.question button:hover {
+  background-color: #ddd;
+}
+
+.question button.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.question p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.question p.correct {
+  color: #4caf50;
+}
+
+.question p.incorrect {
+  color: #f44336;
+}
+
+.question h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+.poem {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.poem p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
   from {
-    transform: rotate(0deg);
+    opacity: 1;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
