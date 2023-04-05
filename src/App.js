@@ -2,13 +2,14 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-    const [question, setQuestion] = useState('What day is out anniversary?');
-    const [options, setOptions] = useState(['April 29 haha', 'March 29', 'April 10', 'January 20']);
+    const [question, setQuestion] = useState('When yobo and I went to Chicago in August where did we eat?');
+    const [options, setOptions] = useState(['Ramen-san deluxe', 'Kung Fu Tea', 'Strings Ramen Shop', 'Daebak Korean BBQ']);
     const [selectedOption, setSelectedOption] = useState(null);
     const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
 
     const checkAnswer = (option) => {
-        if (option === 'April 10') {
+        /** 
+        if (option === 'bowling' || option === 'FUCKING BOWLING') {
             setIsCorrectAnswer(true);
             document.querySelector('.question').classList.add('fade-out');
             document.querySelector('.poem').classList.add('fade-in');
@@ -16,6 +17,11 @@ function App() {
             setIsCorrectAnswer(false);
         }
         setSelectedOption(option);
+        */
+       setIsCorrectAnswer(true);
+       document.querySelector('.question').classList.add('fade-out');
+       document.querySelector('.poem').classList.add('fade-in');
+       setSelectedOption(option);
     };
 
     const handleAnimationEnd = () => {
@@ -47,8 +53,8 @@ function App() {
                 )}
             </div>
             <div className="poem">
-                <p>So long it has been, since I've last seen you</p>
-                <p>Like a drug, my body needs you, and I don't want to be saved</p>
+                <p>Hand in hand with you, I find my home</p>
+                <p>I want nothing more than to always be with you</p>
             </div>
         </div>
     );
